@@ -18,6 +18,7 @@
     --button-shadow-third: rgba(0, 0, 0, 0.12);
     --portfolio-button-shadow1:rgba(0, 0, 0, 0.06);
     --portfolio-btn-shaddow2:rgba(0, 0, 0, 0.16);
+    --whatwedo-bg-color: rgba(47, 48, 58, 0.8);
     --img-gap: 30px;
     --features-item-quantity: 4;
     --img-quantity-whatwedo: 3;
@@ -159,11 +160,40 @@ a {
     letter-spacing: 0.02em;
     color: var(--main-color);
 }
-.nav-list .link.current {
+.nav-list .current {
     color: var(--second-color);
 }
-.nav-list .link:hover, .nav-list .link:focus  {
+.nav-list-item {
+    position: relative;
+}
+.nav-link.current::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--second-color);
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.nav-list .link:hover, 
+.nav-list .link:focus {
     color: var(--second-color);
+}
+.nav-list .link:hover::after,
+.nav-list .link:focus::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--second-color);
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 .contacts .link {
     color: var(--paragraph-color);
@@ -395,8 +425,28 @@ text-align: center;
     gap: var(--img-gap);
 }
 .whatwedo-item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    position: relative;
 }  
+.whatwedo-paragraph {
+    display: inline-flex;
+    position:absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    justify-content: center ;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
   /*Our Team*/
 .ourteam {
     background: var(--background-color);
