@@ -617,11 +617,7 @@ padding-bottom: 30px;
     align-items: center;
 
     transform: translateY(100%);
-    transition: transform 250ms var(--transition-timing-function);
-}
-.portfolio-item:hover .portfolio-thumb-overlay, 
-.portfolio-item:focus .portfolio-thumb-overlay {
-    transform: translateY(0%);
+    transition: transform 250ms var(--transition-timing-function), box-shadow 250ms var(--transition-timing-function);
 }
 .overlay-text {
     padding: 63px 24px;
@@ -630,6 +626,10 @@ padding-bottom: 30px;
     line-height: calc(28/18);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+}
+.portfolio-link:hover .portfolio-thumb-overlay, 
+.portfolio-link:focus .portfolio-thumb-overlay {
+    transform: translateY(0%);
 }
 .portfolio-item-title {
     font-weight: 700;
