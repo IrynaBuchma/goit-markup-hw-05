@@ -404,6 +404,41 @@
                     <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg>
             </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form" name="oder" method="post">
+                <label class="form-field">
+                    <span class="form-label">Ім'я</span>
+                    <input class="field-input" type="text" name="name" placeholder=" " title="Anna Fisher" required>
+                    <svg class="field-icon" width="12" height="12">
+                        <use href="./images/icons.svg#user-icon"></use>
+                    </svg>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Телефон</span>
+                    <input class="field-input" type="tel" name="phone" placeholder=" " title="012 345 67 89" required>
+                    <svg class="field-icon" width="13" height="13">
+                        <use href="./images/icons.svg#phone-icon"></use>
+                    </svg>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Пошта</span>
+                    <input class="field-input" type="e-mail" name="mail" placeholder=" " title="mfisher@mail.com" required>
+                    <svg class="field-icon" width="15" height="13">
+                        <use href="./images/icons.svg#e-mail-icon"></use>
+                    </svg>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Коментар</span>
+                    <textarea class="comments" name="" rows="8" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="form-agreement">
+                    <input class="form-checkbox" type="checkbox" name="checkbox" checked required>
+                    <span class="form-agreement-text">Погоджуюся з розсилкою та приймаю 
+                        <a class="form-agreement-link link" href="">Умови договору</a>
+                    </span>
+                </label>
+                <button class="form-btn" type="submit">Відправити</button>
+            </form>
         </div>
     </div>
 
