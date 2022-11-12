@@ -394,6 +394,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-container">
+                <strong class="footer-form-title">Підпишіться на розсилку</strong>
+                <form class="footer-form" name="oder" autocomplete="off" method="post">
+                    <label class="footer-form-field">
+                        <input class="footer-field-input" type="email" name="email" placeholder="E-mail" required>
+                    </label>
+                    <button class="footer-form-btn" type="submit">Підписатися
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use href="./images/icons.svg#plane-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -405,24 +418,24 @@
                 </svg>
             </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-            <form class="modal-form" name="oder" method="post">
+            <form class="modal-form" name="oder" autocomplete="off" method="post">
                 <label class="form-field">
                     <span class="form-label">Ім'я</span>
-                    <input class="field-input" type="text" name="name" placeholder=" " title="Anna Fisher" required>
+                    <input class="field-input" type="text" name="name" title="Anna Fisher" required>
                     <svg class="field-icon" width="12" height="12">
                         <use href="./images/icons.svg#user-icon"></use>
                     </svg>
                 </label>
                 <label class="form-field">
                     <span class="form-label">Телефон</span>
-                    <input class="field-input" type="tel" name="phone" placeholder=" " title="012 345 67 89" required>
+                    <input class="field-input" type="tel" name="phone" title="012 345 67 89" required>
                     <svg class="field-icon" width="13" height="13">
                         <use href="./images/icons.svg#phone-icon"></use>
                     </svg>
                 </label>
                 <label class="form-field">
                     <span class="form-label">Пошта</span>
-                    <input class="field-input" type="e-mail" name="mail" placeholder=" " title="mfisher@mail.com" required>
+                    <input class="field-input" type="email" name="email" title="mfisher@mail.com" required>
                     <svg class="field-icon" width="15" height="13">
                         <use href="./images/icons.svg#e-mail-icon"></use>
                     </svg>
@@ -432,7 +445,11 @@
                     <textarea class="comments" name="" rows="8" placeholder="Введіть текст"></textarea>
                 </label>
                 <label class="form-agreement">
-                    <input class="form-checkbox" type="checkbox" name="checkbox" checked required>
+                    <input class="form-checkbox" type="checkbox" name="agreement-checkbox" checked required>
+                    <svg class="form-checkbox-icon" width="16" height="15">
+                        <use class="unchecked" href="./images/icons.svg#icon-unchecked"></use>
+                        <use class="checked" href="./images/icons.svg#icon-checked"></use>
+                    </svg>
                     <span class="form-agreement-text">Погоджуюся з розсилкою та приймаю 
                         <a class="form-agreement-link link" href="">Умови договору</a>
                     </span>
